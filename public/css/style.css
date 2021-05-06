@@ -1,0 +1,35 @@
+.bgLogin{
+    background-image: url('../photos/background.jpg');
+    background-size: cover;
+}
+.loginStyle{
+    background: rgb(255 255 255);
+    height: 100vh;
+    padding: 30px;
+    border-style: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px 2px #00000030;
+}
+.content-wrapper{
+    background:unset;
+}
+.nav-sidebar .nav-item>.nav-link{
+    color:#07ac78;
+}
+aside.main-sidebar.sidebar-dark-primary.elevation-4 {
+    background-color: #20082a;
+}
+.page-item.active .page-link,
+.btn-success{
+    background-color: #07ac78!important;
+    border-color: #037e57!important;
+}
+.form-control{
+    border:1px solid #08ac78!important;
+}
+label{
+    color:#08ac78;
+}
