@@ -35,7 +35,7 @@ class ContactUsController extends Controller
             'email'=>$request->mail,
             'message'=>$request->content
         ];
-        // Mail::to($this->get_email())->send(new RequestQuotation($data));
+        Mail::to($this->get_email())->send(new RequestQuotation($data));
         Session::flash('message', 'Your form has been submited successfully'); 
         Session::flash('alert-success', 'success');
         return redirect()->back();

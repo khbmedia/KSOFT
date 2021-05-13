@@ -799,14 +799,14 @@ transform: translateY(-20px);
 .bg-pc{
     background-image: url('../images/hero-img-mac.png');
 }
-@media only screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
     .bg-pc{
         display:none;
     }
     .border-grey{
         display:none;
     }
-  }
+  } */
 /*===== Common transitions =====*/
 .dtr-video-button:before, .dtr-video-button { -webkit-transition: all .5s linear; -moz-transition: all .5s linear; -o-transition: all .5s linear; -ms-transition: all .5s linear; transition: all .5s linear; }
 .dtr-logo, a:link, .dtr-btn, button, input[type="submit"], input[type="reset"], .dtr-form-btn, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #dtr-header-global, .dtr-social a, .nav-link, .dtr-list-simple li, .dtr-testimonial-boxed .dtr-testimonial { -webkit-transition: all .3s linear; -moz-transition: all .3s linear; -o-transition: all .3s linear; -ms-transition: all .3s linear; transition: all .3s linear; }

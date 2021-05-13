@@ -1,5 +1,4 @@
 @extends('frontend.layout.app')
-
 @section('content')
 @section('title','About Us')
 <div class="top-head" style="background-image:url('/images/about.jpg');background-size:cover;">
@@ -8,7 +7,6 @@
           <div class="col-md-12">
              <div class="dark-head1  wow   slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
                 <h1 style="color:white;">About</h1>
-                
              </div>
           </div>
        </div>
@@ -33,7 +31,6 @@
                 </div>
                 <h4 class="h4-about color-dark-blue">Start working with us</h4>
                 @foreach ($about as $item)
-                    
                 @if($item->key=="Start working with us")
                 <p class="p-about">
                    {!!$item->value!!}
@@ -52,7 +49,6 @@
                 </div>
                 <h4 class="h4-about color-dark-blue">Benefits of our KSOFT</h4>
                 @foreach ($about as $item)
-                    
                 @if($item->key=="Benefits of our KSOFT")
                 <p class="p-about">
                    {!!$item->value!!}
@@ -71,7 +67,6 @@
                 </div>
                 <h4 class="h4-about color-dark-blue">How we reached here</h4>
                 @foreach ($about as $item)
-                    
                 @if($item->key=="How we reached here")
                 <p class="p-about">
                    {!!$item->value!!}
@@ -88,7 +83,6 @@
        <div class="row">
           <div class="col-md-12 col-sm-12 text-center heading wow animated slideInUp dtr-mb-50">
              <h3 style="color:#fff;">We have came a long way</h3>
-             
              <div class="dtr-styled-divider divider-center bg-light-blue"></div>
           </div>
           <div class="col-md-6 col-sm-6">
@@ -100,8 +94,6 @@
              <div class=" example-basic wow  fadeInRight animated">
                 <ul class="timeline">
                    @foreach ($history as $item)
-                       
-                   
                    <li class="timeline-item">
                       <div class="timeline-info">
                          <span>{{$item->year}}</span>
@@ -120,29 +112,31 @@
     </div>
  </section>
  <section class="team">
-    <div class="container">
-       <div class="row">
-          <div class="col-md-12 col-sm-12 text-center heading wow animated slideInUp dtr-mb-50">
-             <h3 class="color-dark-blue">People behind the KSOFT App</h3>
-             <div class="dtr-styled-divider divider-center bg-dark-blue"></div>
-          </div>
-          @foreach ($teams as $item)
-          <div class="col-md-3 col-sm-3 team-border">
-             <div class="team-member  text-center ">
-                <img src="{{asset("storage/$item->profile")}}" class="img-responsive img-circle" alt="team">
-                <h4>{{$item->name}}</h4>
-                <p>{{$item->position}}</p>
-                <div class="main-3-section">
-                   <ul>
-                      <li class="twitter-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li class="facebook-icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li class="youtube-icon"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-          @endforeach
-       </div>
-    </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 col-sm-12 text-center heading wow animated slideInUp dtr-mb-50">
+               <h3 class="color-dark-blue">People behind the KSOFT App</h3>
+               <div class="dtr-styled-divider divider-center bg-dark-blue"></div>
+            </div>
+         </div>
+         <div class="row d-flex justify-content-center">
+            @foreach ($teams as $item)
+            <div class="col-md-3 col-sm-3 team-border">
+               <div class="team-member text-center ">
+                  <img src="{{asset("storage/$item->profile")}}" class="img-responsive img-circle" alt="team">
+                  <h4>{{$item->name}}</h4>
+                  <p>{{$item->position}}</p>
+                  <div class="main-3-section">
+                     <ul>
+                        <li class="twitter-icon"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="facebook-icon"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="youtube-icon"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            @endforeach
+         </div>
+      </div>
  </section>
 @endsection

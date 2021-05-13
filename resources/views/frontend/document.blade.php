@@ -23,7 +23,7 @@
                 <div class="panel panel-default" style="margin-bottom:2px;">
                     <div class="panel-heading">
                        <h4 class="panel-title">
-                          <a href="{{route('document',$item->id)}}">
+                          <a href="{{route('document',$item->id)}}" style="color: #fff">
                             {{$item->title}}
                           </a>
                        </h4>

@@ -39,6 +39,7 @@ class PriceController extends Controller
         $data_price=$this->validate($request,[
             'price'=>'required|numeric',
             'title'=>'required',
+            'url'=>'required',
             'description'=>'required'
             
         ]);
@@ -47,8 +48,9 @@ class PriceController extends Controller
         
         $price->price=$request->price;
         $price->title=$request->title;
+        $price->url=$request->url;
         $price->description=$request->description;
-       
+
         $price->save();
         return redirect()->route('listPrice');
     }
@@ -92,6 +94,7 @@ class PriceController extends Controller
         $data_price=$this->validate($request,[
             'price'=>'required',
             'title'=>'required',
+            'url'=>'required',
             'description'=>'required'
             
         ]);
@@ -99,6 +102,7 @@ class PriceController extends Controller
         $price=Price::where('id',$id)->first();
         $price->price=$request->price;
         $price->title=$request->title;
+        $price->url=$request->url;
         $price->description=$request->description;
         $price->save();
         return redirect()->route('listPrice');

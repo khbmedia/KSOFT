@@ -18,6 +18,7 @@ class CreatePricesTable extends Migration
             $table->string('title');
             $table->text('icon');
             $table->decimal('price');
+            $table->text('url');
             $table->text('description');
             $table->timestamps();
         });

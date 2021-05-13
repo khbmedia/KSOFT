@@ -149,7 +149,7 @@
               <h3 class="color-white">{{$item->title}}</h3>
               <p class="dtr-price color-white"><sup>$</sup>{{$item->price}}</p>
               <p class="dtr-m-0">per user /mo</p>
-              <a href="{{route("contact")}}" class="dtr-btn btn-dark-blue dtr-my-30">Signup for free</a>
+              <a href="{{url("$item->url")}}" target="_blank" class="dtr-btn btn-dark-blue dtr-my-30">Signup for free</a>
               <ul class="dtr-list-block color-white">
                  {!!$item->description!!}
               </ul>
@@ -264,7 +264,14 @@
     </div>
  </section>
 
-<section class="dtr-section dtr-md-mx-20 dtr-border-y border-grey dtr-py-50"> 
+<section class="dtr-md-mx-20 dtr-border-y border-grey dtr-py-50"> 
+    <div class="row">
+        <div class="col-md-12 col-sm-12 text-center heading wow animated slideInUp dtr-mb-50">
+           <h3 class="color-dark-blue">Our Partners</h3>
+           <div class="dtr-styled-divider divider-center bg-dark-blue"></div>
+        </div>
+       
+     </div>
             
    <!-- row starts -->
    <div class="row">

@@ -21,13 +21,17 @@
    <div class="container">
 
       
-
+      
       <!-- row starts -->
       <div class="row" style="border:1px solid #0d64a6;padding:5px;">
 
          <!-- column 1 starts -->
          <div class="col-12 col-md-5 dtr-md-mb-30" style="background:#0d64a6;padding:5px;">
-            <img src="assets/images/contact-img.png" alt="image">
+            @foreach ($contact as $item)
+            @if($item->key=='Contact Image')
+            <img src="{{asset($item->value)}}" alt="image">
+            @endif
+            @endforeach
             <div class="row">
                <div class="col-md-12">
 <div class="main-3-section">
