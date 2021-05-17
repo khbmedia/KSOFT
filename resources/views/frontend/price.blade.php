@@ -17,7 +17,6 @@
 
 <section class="pricing-list">
    <div class="container">
-      <!-- row starts -->
       <div class="row">
          @foreach ($price as $item)
          @if($loop->iteration==1)
