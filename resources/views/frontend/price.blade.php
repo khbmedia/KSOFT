@@ -55,8 +55,10 @@
                <h3 class="color-white">{{$item->title}}</h3>
                <p class="dtr-price color-white"><sup>$</sup>{{$item->price}}</p>
                <p class="dtr-m-0 color-white">per user /mo</p>
+
                <a href="{{url("$item->url")}}" target="_blank" class="dtr-btn btn-white dtr-my-30">Signup for free</a>
                <ul class="dtr-list-block">
+
                   {!!$item->description!!}
                </ul>
             </div>
@@ -74,7 +76,9 @@
                <h3 class="color-white">{{$item->title}}</h3>
                <p class="dtr-price color-white"><sup>$</sup>{{$item->price}}</p>
                <p class="dtr-m-0 color-white">per user /mo</p>
+
                <a href="{{url("$item->url")}}" target="_blank" class="dtr-btn btn-dark-blue dtr-my-30">Signup for free</a>
+
                <ul class="dtr-list-block color-white">
                   {!!$item->description!!}
                </ul>
