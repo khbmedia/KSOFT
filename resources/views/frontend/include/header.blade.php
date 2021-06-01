@@ -20,10 +20,10 @@
            <div class="dtr-header-left"> 
                
                <!-- logo --> 
-               <a class="logo-default dtr-scroll-link" href="{{route("home")}}"><img style="height:35px;margin-top:-25px;" src="{{asset("frontend/image/logo.svg")}}" alt="logo"></a> 
+               <a class="logo-default" href="{{route("home")}}"><img style="height:35px;margin-top:-25px;" src="{{asset("frontend/image/logo.svg")}}" alt="logo"></a> 
                
                <!-- logo on scroll --> 
-               <a class="logo-alt dtr-scroll-link" href="{{route("home")}}"><img style="height:30px;margin-top:-15px;" src="{{asset("frontend/image/logo-color.svg")}}" alt="logo"></a> 
+               <a class="logo-alt" href="{{route("home")}}"><img style="height:30px;margin-top:-15px;" src="{{asset("frontend/image/logo-color.svg")}}" alt="logo"></a> 
                <!-- logo on scroll ends --> 
                
            </div>
