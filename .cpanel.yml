@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/devkhb/ksoft.dev.khb.asia
+    - /bin/cp -R * $DEPLOYPATH
