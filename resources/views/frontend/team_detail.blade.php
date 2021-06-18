@@ -27,11 +27,11 @@
                     </div>
             </div>
              --}}
-            <div class="row">
+            <div class="row d-flex">
                 <div class="col-md-6 img">
                   <img src="{{asset("storage/$team->profile")}}"  alt="$team->name" class="img-rounded">
                 </div>
-                <div class="col-md-6 details">
+                <div class="col-md-6 details" style="display: flex; align-items: center;">
                   <blockquote>
                     <h5>Name: {{$team->name}}</h5>
                     <h5>Position: {{$team->position}}</h5>
