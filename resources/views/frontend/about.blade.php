@@ -124,7 +124,7 @@
             <div class="col-md-3 col-sm-3 team-border">
                <div class="team-member text-center ">
                   <img src="{{asset("storage/$item->profile")}}" class="img-responsive img-circle" alt="team">
-                  <h4>{{$item->name}}</h4>
+                  <h4><a style="color: #fff" href="{{route("team_detail",$item->id)}}">{{$item->name}}</a></h4>
                   <p>{{$item->position}}</p>
                   <div class="main-3-section">
                      <ul>
